@@ -126,7 +126,7 @@ class MarkerClusterNode extends MarkerOrClusterNode {
   }
 
   @override
-  Bounds pixelBounds(FlutterMapState map) {
+  Bounds<double> pixelBounds(FlutterMapState map) {
     final width = size().width;
     final height = size().height;
     final anchor = Anchor.forPos(anchorPos, width, height);
